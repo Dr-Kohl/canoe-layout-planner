@@ -5,7 +5,7 @@ import './app/canoe.css';
 import Home from './app/page';
 import LayoutPlanner from './app/layout-planner/page';
 
-const showPlanner = new URLSearchParams(window.location.search).get('tool') === 'layout';
+const showPlanner = new URLSearchParams(window.location.search).get('tool') !== 'float';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>{showPlanner ? <LayoutPlanner /> : <Home />}</StrictMode>,
