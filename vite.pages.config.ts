@@ -14,7 +14,8 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        planner: `${root}index.html`,
+        index: `${root}index.html`,
+        planner: `${root}Canoe Layout Planner.html`,
         floatLab: `${root}float-lab/index.html`,
       },
     },
