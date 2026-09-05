@@ -48,7 +48,7 @@ export default function LayoutPlanner() {
 
   return <main>
     <header className="site-header"><div><p className="eyebrow">EGGN 1910 · Engineering Exploration</p><h1>Canoe Layout Planner</h1></div><button className="reset" onClick={reset}>Reset plan</button></header>
-    <section className="intro"><p className="kicker">Plan the cuts before you build.</p><p>Your team receives <strong>55 feet of 41-inch-wide waxed paper board</strong>. Reserve the skin first, then see how much remains for the 10-inch rolled frame pieces.</p><p><a className="tool-link" href="https://dr-kohl.github.io/cardboard-boat-float-lab/">Open the separate Cardboard Boat Float Lab →</a></p></section>
+    <section className="intro"><p className="kicker">Plan the cuts before you build.</p><p>Your team receives <strong>55 feet of 41-inch-wide waxed paper board</strong>. Reserve the skin first, then see how much remains for the rolled frame pieces.</p><p><a className="tool-link" href="https://dr-kohl.github.io/cardboard-boat-float-lab/">Open the separate Cardboard Boat Float Lab →</a></p></section>
     <section className="planner-grid">
       <aside className="controls-card"><h2>1. Set the stock plan</h2>
         <label className="planner-field"><span>Canoe length</span><div><input type="number" min="4" max="10" step="0.5" value={canoeLength} onChange={(e) => setCanoeLength(Number(e.target.value))} /><b>ft</b></div></label>
